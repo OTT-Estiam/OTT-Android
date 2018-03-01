@@ -228,6 +228,8 @@ public class PlayerActivity extends AppCompatActivity {
 
         MediaSource videoSource;
 
+        //trackSelector.
+
         switch (type){
             case "DASH":
                 videoSource = new DashMediaSource.Factory(
@@ -236,7 +238,7 @@ public class PlayerActivity extends AppCompatActivity {
                 break;
             case "HLS":
                 videoSource = new HlsMediaSource.Factory(dataSourceFactory)
-                        .createMediaSource(Uri.parse("http://www.streambox.fr/playlists/test_001/stream.m3u8"));
+                        .createMediaSource(Uri.parse("http://192.168.10.3/live/racine.m3u8"));//"http://www.streambox.fr/playlists/test_001/stream.m3u8"));
                 break;
             default:
                 throw new Exception("Unreconigzed type");

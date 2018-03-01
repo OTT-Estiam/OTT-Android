@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/liveImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#202020"
+        android:contentDescription="Live widget" />
+    <TextView
+        android:id="@+id/liveTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Test"
+        android:textSize="30sp"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="@id/liveImage"
+        android:layout_marginBottom="50dp"/>
+    <View
+        android:background="@drawable/widget_gradient_shape"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+</android.support.constraint.ConstraintLayout>
